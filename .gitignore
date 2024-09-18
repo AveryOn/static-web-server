@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Переменные окружения
+.env
+
+# Директории сборки
+dist/
+build/
+
+# Логи
+logs/
+*.log
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+
+# Другие
+.DS_Store
+Thumbs.db
