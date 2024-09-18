@@ -49,7 +49,7 @@ module.exports = {
                         fs.readFile(path.join(PROJECT_DIR, 'index.html'), (indexErr, indexContent) => {
                             if (indexErr) {
                                 res.writeHead(500);
-                                res.end('Internal Server Error: ' + indexErr.code)
+                                res.end('Internal Server Error: ' + indexErr.code, 'utf-8')
                             } else {
                                 res.writeHead(200, { 'Content-Type': 'text/html' });
                                 res.end(indexContent, 'utf-8');
@@ -57,7 +57,7 @@ module.exports = {
                         });
                     } else {
                         res.writeHead(500);
-                        res.end('Internal Server Error: ' + err.code);
+                        res.end('Internal Server Error: ' + err.code, 'utf-8');
                     }
                 } else {
                     res.writeHead(200, { 'Content-Type': contentType });
