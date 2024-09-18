@@ -11,6 +11,7 @@ yarn.lock
 # Директории сборки
 dist/
 build/
+src/projects
 
 # Логи
 logs/
